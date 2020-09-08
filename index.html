@@ -455,13 +455,66 @@
     </footer>
     <div class="order is-hidden" data-modal>
       <div class="windows">
-        <h2 class="win-text">Оставьте свои данные, мы вам перезвоним</h2>
-
-        <button class="but-cl" type="button" data-modal-close>
+        <button class="but-cl" type="submit" data-modal-close>
           <svg width="11" height="11" class="xz">
             <use href="./image/bo.svg#icon-x"></use>
           </svg>
         </button>
+        <h2 class="win-text">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="" class="win-form">
+          <div class="wind-name">
+            <input
+              class="win-name"
+              name="user-name"
+              type="text"
+              id="user-name"
+            />
+            <svg width="15" height="12" class="nirvana">
+              <use href="./image/bo.svg#icon-men"></use>
+            </svg>
+            <label class="dynoro" for="user-name">Имя</label>
+          </div>
+          <div class="wind-name">
+            <input
+              class="win-tell"
+              name="user-tell"
+              type="tel"
+              id="user-tell"
+            />
+            <svg width="15" height="12" class="nirvana">
+              <use href="./image/bo.svg#icon-tell"></use>
+            </svg>
+            <label class="dynoro" for="user-tell">Телефон</label>
+          </div>
+          <div class="wind-name">
+            <input
+              class="win-mail"
+              name="user-mail"
+              type="text"
+              id="user-mail"
+            />
+            <label class="dynoro" for="user-mail">Почта</label>
+            <svg width="15" height="12" class="nirvana">
+              <use href="./image/bo.svg#icon-mailll"></use>
+            </svg>
+          </div>
+          <div class="wind-name">
+            <textarea
+              class="commit"
+              name="user-message"
+              id="user-message"
+            ></textarea>
+            <label class="dynoro" for="user-message">Коментарий</label>
+          </div>
+
+          <input class="win-form" type="checkbox" name="win-pol" id="win-pol" />
+          <label class="win-ok" for="win-pol"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a></label
+          >
+
+          <button class="win-bt" type="reset">Отправить</button>
+        </form>
       </div>
     </div>
 
