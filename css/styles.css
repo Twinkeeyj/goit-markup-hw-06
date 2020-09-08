@@ -606,16 +606,22 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: ease-in-out;
+
+  transform: translateY(0%);
+
   opacity: 1;
   visibility: visible;
   pointer-events: unset;
 }
-/* .for-form {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  overflow: hidden;
-} */
+
+/* .f-1:hover {
+  transform: translateY(0%);
+transform: translateY(100%); */
+
 .windows {
   width: 528px;
   height: 581px;
@@ -627,6 +633,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding-top: 40;
 }
 .but-cl {
   width: 30px;
@@ -643,5 +650,17 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: translateY(100%);
 }
+
+.win-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.86;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  transform: translateY(100%);
+}
+
 /*over order */
