@@ -581,18 +581,20 @@ img {
   font-family: var(--font-famali);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  /* line-height: 1.88; */
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
-  display: inline-block;
+  display: inline-flex;
+  border: none;
 }
 .subscibe-bt .social-svg {
-  position: relative;
-  top: 6px;
-  left: 2px;
+  margin-left: 10px;
+}
+.subscibe-forms {
+  display: flex;
 }
 
 /* order */
