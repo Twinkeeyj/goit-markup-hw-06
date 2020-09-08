@@ -796,5 +796,25 @@ transform: translateY(100%); */
   left: 0;
   fill: currentColor;
 }
+.win-form:checked + .win-ok::before {
+  /* background-image: url(../image/ok.svg);
+  background-size: 16px 15px; */
+  background-color: red;
+}
+.win-ok {
+  display: flex;
+  align-items: center;
+}
+.win-ok::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 15px;
+  background: var(--primary-beg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-right: 9px;
+}
 
 /*over order */
