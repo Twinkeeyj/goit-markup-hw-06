@@ -599,15 +599,15 @@ img {
 
 /* order */
 .order {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 3000px;
   background-color: rgba(0, 0, 0, 0.2);
 
   transition-property: all;
-  transition-duration: 250ms;
+  transition-duration: 50ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: ease-in-out;
 
@@ -616,6 +616,7 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: unset;
+  transition: all 250ms linear;
 }
 
 /* .f-1:hover {
@@ -750,7 +751,7 @@ transform: translateY(100%); */
   letter-spacing: 0.03em;
   color: var(--accent-color);
   transform: translateY(100%);
-  margin-top: 40px;
+  margin-top: 18px;
   margin-bottom: 30px;
 }
 .win-bt {
@@ -769,19 +770,24 @@ transform: translateY(100%); */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;
-  margin-left: 165px;
+  margin: auto;
 }
 .win-form {
   display: flex;
   flex-direction: column;
   padding-left: 41px;
   padding-right: 41px;
-  /* padding-top: 40px; */
+  padding-top: 25px;
 }
 .wind-name {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
+.wind-com {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .nirvana {
   position: absolute;
   top: 50%;
@@ -804,6 +810,7 @@ transform: translateY(100%); */
 .win-ok {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .win-ok::before {
   content: "";
