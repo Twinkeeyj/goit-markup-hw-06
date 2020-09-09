@@ -606,10 +606,10 @@ img {
   height: 3000px;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition-property: all;
+  /* transition-property: all;
   transition-duration: 50ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out; */
 
   transform: translateY(0%);
 
@@ -618,11 +618,10 @@ img {
   pointer-events: unset;
   transition: all 250ms linear;
 }
-
-/* .f-1:hover {
-  transform: translateY(0%);
-transform: translateY(100%); */
-
+.windows.is-hidden .order {
+  transform: translateY(100%);
+  transition: 250ms linear 250s;
+}
 .windows {
   width: 528px;
   height: 581px;
@@ -634,11 +633,16 @@ transform: translateY(100%); */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-top: 40;
-
-  /* padding-left: 41; */
-  /* display: flex; */
+  padding-top: 40px;
+  transition: all 250ms linear 250ms;
 }
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(100%);
+}
+
 .but-cl {
   width: 30px;
   height: 30px;
@@ -648,18 +652,12 @@ transform: translateY(100%); */
   position: absolute;
   right: 8px;
   top: 8px;
-  /* box-sizing: inherit; */
 }
 
 .but-cl:hover {
   fill: var(--title-text-color);
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateY(100%);
-}
+
 /* =============== Звонки ======================== */
 .win-name {
   border-style: none;
