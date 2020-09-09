@@ -803,9 +803,12 @@ transform: translateY(100%); */
   fill: currentColor;
 }
 .win-form:checked + .win-ok::before {
-  /* background-image: url(../image/ok.svg);
-  background-size: 16px 15px; */
-  background-color: red;
+  background-image: url(../image/ok.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 11px;
+
+  background-color: var(--title-text-color);
 }
 .win-ok {
   display: flex;
@@ -814,7 +817,6 @@ transform: translateY(100%); */
 }
 .win-ok::before {
   content: "";
-  display: block;
   width: 16px;
   height: 15px;
   background: var(--primary-beg-color);
@@ -822,6 +824,7 @@ transform: translateY(100%); */
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin-right: 9px;
+  background: url(../image/ok.svg);
 }
 
 /*over order */
