@@ -833,11 +833,13 @@ img {
   background-color: var(--title-text-color);
 }
 .win-ok {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   margin-bottom: 30px;
+  font-size: 14px;
 }
 .win-ok::before {
+  display: inline-block;
   content: "";
   width: 16px;
   height: 15px;
