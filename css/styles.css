@@ -659,6 +659,9 @@ img {
   position: absolute;
   right: 8px;
   top: 8px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .but-cl:hover {
@@ -675,7 +678,9 @@ img {
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
-  /* background-color: transparent; */
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .win-name:hover {
   border-color: var(--title-text-color);
@@ -698,6 +703,9 @@ img {
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .win-mail:focus {
   border-color: var(--title-text-color);
@@ -720,6 +728,9 @@ img {
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .win-tell:focus {
   border-color: var(--title-text-color);
@@ -743,6 +754,9 @@ img {
   padding: 12px 16px;
   outline: none;
   resize: none;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .commit:focus,
 .commit:hover {
@@ -800,6 +814,9 @@ img {
   left: 0;
   display: block;
   fill: var(--accent-color);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dynoro {
   position: absolute;
