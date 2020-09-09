@@ -618,22 +618,30 @@ img {
   pointer-events: unset;
   transition: all 250ms linear;
 }
-.windows.is-hidden .order {
+.order.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transform: translateY(100%);
-  transition: 250ms linear 250s;
+  transition: all 250ms linear 250ms;
 }
+
 .windows {
   width: 528px;
   height: 581px;
   top: 221px;
   position: fixed;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(1);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: all 250ms linear 250ms;
+}
+.order.is-hidden .windows {
+  transform: translateX(-50%) scale(0);
+  transition: transform 500ms linear 0ms;
 }
 .is-hidden {
   opacity: 0;
