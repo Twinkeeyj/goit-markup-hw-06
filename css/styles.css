@@ -623,7 +623,7 @@ img {
   visibility: hidden;
   pointer-events: none;
   transform: translateY(100%);
-  transition: all 250ms linear 250ms;
+  transition: all 100ms linear 250ms;
 }
 
 .windows {
